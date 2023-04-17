@@ -1,0 +1,117 @@
+.background{
+  background-image: url('./Images/LANDING PHOTO.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+
+.divStyle {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+h1{
+  display: inline;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 11%;
+  margin-top: 10vh;
+  font-family: fantasy;
+  font-size: 3rem;
+  color: #367cec;
+}
+
+h2{
+  display: ruby-text;
+  font-family: fantasy;
+  font-size: 2rem;
+  color: #7a1703;
+}
+
+.button {
+      margin-left: 37%;
+      align-items: center;
+      padding: 1.5em 3em;
+      border: 0;
+      outline: none;
+      color: rgb(255, 255, 255);
+      background: transparent;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      font-weight: bold;
+      letter-spacing: .25em;
+    }
+    
+.button:before {
+      content: "";
+      background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing-button-85 20s linear infinite;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+    
+@keyframes glowing-button-85 {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+    
+.button:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #222;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+.button:hover {
+        background-color: white; 
+        color: rgb(255, 0, 157);
+        cursor: pointer;
+        font-family: 'Comic Sans MS';
+        letter-spacing: 0.30em;
+        font-size: 1em;
+
+    }
+
